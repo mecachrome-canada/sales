@@ -109,7 +109,7 @@ section{padding:44px 0 6px}
 .country .n{color:var(--grey);font-size:14px}
 .sector{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}
 .sector div{border:1px solid var(--rule);background:var(--mint);padding:12px;font-weight:700;color:var(--navy);font-size:15px;line-height:1.25}
-.sector div.hl{background:var(--navy);color:#fff}
+
 
 /* contacts */
 .cards{display:grid;gap:16px}
@@ -158,6 +158,29 @@ footer img{height:40px;margin:0 auto 8px}
   .dock{display:none}
   footer{padding-bottom:30px}
 }
+
+.certs{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.cert{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--rule);border-top:3px solid var(--green);padding:8px 12px 8px 8px;flex:1 1 210px}
+.cert .seal{flex:none;width:46px;height:46px;border-radius:50%;border:2px solid var(--navy);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:10.5px;letter-spacing:.02em;color:var(--navy);text-align:center;line-height:1.05;background:#fff;overflow:hidden}
+.cert .seal img{width:30px;height:auto}
+.cert.wip .seal{border-style:dashed;border-color:var(--grey);color:var(--grey)}
+.cert b{display:block;color:var(--navy);font-size:15px;line-height:1.15}
+.cert span.t{display:block;color:var(--grey);font-size:13px;line-height:1.25}
+.top img.flagico{height:14px;width:auto;margin-left:5px;display:inline-block}
+.flagico{display:inline-block;height:14px;width:auto;vertical-align:-2px;margin-left:5px}
+.visit{display:grid;gap:16px;align-items:center;border:1px solid var(--rule);border-top:4px solid var(--green);padding:16px;margin-top:26px;background:#fff}
+.visit img.map{width:100%;max-width:340px;height:auto;margin:0 auto}
+.visit h3{font-size:22px;text-transform:uppercase}
+.visit address{font-style:normal;margin:8px 0 0;font-size:16px}
+.visit p{margin:8px 0 0;font-size:14px;color:var(--grey)}
+.visit .btns{margin-top:14px}
+.visit .btn{min-height:44px;font-size:15px;padding:0 16px}
+@media (min-width:700px){.visit{grid-template-columns:minmax(0,300px) 1fr;gap:26px;padding:20px}}
+.endcta{margin-top:34px;background:var(--navy);color:#fff;padding:24px 22px;text-align:center}
+.endcta h2{color:#fff;font-size:clamp(22px,5.5vw,30px);text-transform:uppercase}
+.endcta .btns{justify-content:center}
+.endcta .btn{border-color:#fff}
+.endcta .btn.green{border-color:var(--green)}
 </style>
 </head>
 <body>
@@ -165,7 +188,7 @@ footer img{height:40px;margin:0 auto 8px}
 <header class="top">
   <div class="wrap">
     <a href="../"><img src="../assets/mecachrome-logo.png" alt="Mecachrome" width="157" height="50"></a>
-    <div class="where"><a href="../" style="color:inherit">← Contacts</a><br>Mecachrome Canada · Mirabel</div>
+    <div class="where"><a href="../" style="color:inherit">← Contacts</a><br>Mecachrome Canada<img class="flagico" src="../assets/flag-ca.png" alt="Canada" width="19" height="14"></div>
   </div>
 </header>
 
@@ -176,14 +199,14 @@ footer img{height:40px;margin:0 auto 8px}
     <h1>5-axis structures for <span>defense</span> &amp; aerospace</h1>
     <p class="lead">Open 5-axis capacity for large, complex aluminum and hard-metal parts. We machine, assemble and deliver build-to-print structures from Mirabel, Canada, backed by a 24-site industrial group.</p>
     <div class="btns">
-      <a class="btn primary" href="#contact">Talk to us</a>
+      <a class="btn primary" href="../#contact">Talk to us</a>
       <a class="btn" href="../assets/Mecachrome_Canada_Capability_AUSA2026.pdf">Download capability sheet (PDF)</a>
     </div>
-    <div class="trust" aria-label="Certifications">
-      <div><b>AS9100 / ISO 9001</b><span>Mirabel site</span></div>
-      <div><b>CGP registered</b><span>Controlled Goods Program</span></div>
-      <div><b>C-TPAT</b><span>Certified</span></div>
-      <div><b>AeroExcellence Bronze</b><span>In progress, end of 2026</span></div>
+    <div class="certs" aria-label="Certifications and registrations">
+      <div class="cert"><span class="seal"><img src="../assets/flag-ca.png" alt="Canada"></span><div><b>CGP registered</b><span class="t">Controlled Goods Program, Canada</span></div></div>
+      <div class="cert"><span class="seal">AS<br>9100D</span><div><b>AS9100D</b><span class="t">Aerospace quality system, Mirabel</span></div></div>
+      <div class="cert"><span class="seal">C-<br>TPAT</span><div><b>C-TPAT</b><span class="t">Certified supply chain security</span></div></div>
+      <div class="cert wip"><span class="seal">AE</span><div><b>AeroExcellence Bronze</b><span class="t">In progress, expected end of 2026</span></div></div>
     </div>
   </div>
 </div>
@@ -276,81 +299,13 @@ footer img{height:40px;margin:0 auto 8px}
   </div>
 </section>
 
-<section id="group">
-  <div class="wrap">
-    <div class="bar">The Mecachrome Group</div>
-    <div class="stats">
-      <div><b>1937</b><span>Founded</span></div>
-      <div><b>24</b><span>Sites</span></div>
-      <div><b>5,000+</b><span>Employees</span></div>
-      <div><b>€640M</b><span>2024 revenue</span></div>
-    </div>
-    <div class="sites" aria-label="Group sites by country">
-      <div class="country"><span class="lbl">France</span><span class="bar-fill" style="width:84px"></span><span class="n">16 sites · HQ in Blagnac</span></div>
-      <div class="country"><span class="lbl">Morocco</span><span class="bar-fill" style="width:15px"></span><span class="n">3 sites</span></div>
-      <div class="country"><span class="lbl">Tunisia</span><span class="bar-fill" style="width:15px"></span><span class="n">3 sites</span></div>
-      <div class="country"><span class="lbl">Canada</span><span class="bar-fill" style="width:5px"></span><span class="n">1 site · Mirabel, Québec</span></div>
-      <div class="country"><span class="lbl">Portugal</span><span class="bar-fill" style="width:5px"></span><span class="n">1 site</span></div>
-    </div>
-    <div class="sector">
-      <div class="hl">Defense, Naval, Energy &amp; Space</div>
-      <div>Aerostructures</div>
-      <div>Aero-engines</div>
-      <div>Premium &amp; motorsport automotive</div>
-    </div>
+<div class="wrap"><div class="endcta">
+  <h2>Have a part in mind?</h2>
+  <div class="btns">
+    <a class="btn green" href="../#contact">Contact us</a>
+    <a class="btn" style="background:transparent;color:#fff" href="../group/">The Group</a>
   </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <div class="bar">Contact</div>
-    <div class="cards">
-
-      <article class="card">
-        <div class="who">
-          <img class="avatar" src="../assets/johary-lunven.jpg" alt="Johary Lunven" width="84" height="84" onerror="this.outerHTML='<div class=&quot;avatar&quot; aria-hidden=&quot;true&quot;>JL</div>'">
-          <div><h3>Johary Lunven</h3><div class="role">Key Account Manager</div></div>
-        </div>
-        <div class="lines">
-          <div><a href="tel:+12635669383">+1 (263) 566-9383</a></div>
-          <div><a href="mailto:johary.lunven@mecachrome.com">johary.lunven@mecachrome.com</a></div>
-        </div>
-        <div class="btns">
-          <a class="btn primary" href="tel:+12635669383">Call</a>
-          <a class="btn" href="mailto:johary.lunven@mecachrome.com?subject=AUSA%202026">Email</a>
-          <a class="btn green" href="../assets/johary-lunven.vcf" download>Save contact</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="who">
-          <img class="avatar" src="../assets/jonathan-raymond.jpg" alt="Jonathan Raymond" width="84" height="84" onerror="this.outerHTML='<div class=&quot;avatar&quot; aria-hidden=&quot;true&quot;>JR</div>'">
-          <div><h3>Jonathan Raymond</h3><div class="role">Sales Director Americas</div></div>
-        </div>
-        <div class="lines">
-          <div><a href="tel:+15148250140">+1 (514) 825-0140</a></div>
-          <div><a href="mailto:jonathan.raymond@mecachrome.com">jonathan.raymond@mecachrome.com</a></div>
-        </div>
-        <div class="btns">
-          <a class="btn primary" href="tel:+15148250140">Call</a>
-          <a class="btn" href="mailto:jonathan.raymond@mecachrome.com?subject=AUSA%202026">Email</a>
-          <a class="btn green" href="../assets/jonathan-raymond.vcf" download>Save contact</a>
-        </div>
-      </article>
-
-    </div>
-
-    <div class="cta">
-      <h2>Send us a drawing package or RFQ</h2>
-      <p>We come back with a ROM price and a lead time. We can put an NDA in place first, and we would be glad to host you at our facility in Mirabel.</p>
-      <div class="btns">
-        <a class="btn green" href="mailto:johary.lunven@mecachrome.com?cc=jonathan.raymond@mecachrome.com&subject=AUSA%202026%20%E2%80%93%20RFQ%20%2F%20drawing%20package&body=Company%3A%0AProgram%20or%20part%20family%3A%0AMaterial%20and%20approximate%20size%3A%0AQuantities%20and%20need%20date%3A%0A%0APlease%20do%20not%20attach%20ITAR%2FCUI-controlled%20drawings.%20Let%27s%20first%20set%20up%20an%20NDA%20and%20a%20secure%20exchange.">Request a quote</a>
-        <a class="btn" style="background:transparent;color:#fff" href="mailto:johary.lunven@mecachrome.com?cc=jonathan.raymond@mecachrome.com&subject=AUSA%202026%20%E2%80%93%20Visit%20Mirabel">Plan a visit to Mirabel</a>
-      </div>
-      <small>For controlled technical data (ITAR / CUI), please do not email drawings. We will agree on an NDA and a secure exchange channel first.</small>
-    </div>
-  </div>
-</section>
+</div></div>
 </main>
 
 <footer>
@@ -362,8 +317,8 @@ footer img{height:40px;margin:0 auto 8px}
 </footer>
 
 <nav class="dock" aria-label="Quick contact">
-  <a class="btn primary" href="#contact">Contact</a>
-  <a class="btn green" href="../assets/johary-lunven.vcf" download>Save my contact</a>
+  <a class="btn primary" href="../#contact">Contact</a>
+  <a class="btn green" href="../assets/johary-lunven.vcf">Save my contact</a>
 </nav>
 
 </body>
