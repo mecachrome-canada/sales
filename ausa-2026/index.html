@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mecachrome Canada — 5-axis structures for defense &amp; aerospace</title>
+<meta name="description" content="Open 5-axis machining capacity in Mirabel, Québec. Build-to-print structural parts and assemblies in aluminum and hard metals for defense, aerostructures and space.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#152F4E">
+<meta property="og:title" content="Mecachrome Canada — 5-axis structures for defense &amp; aerospace">
+<meta property="og:description" content="Open 5-axis machining capacity in Mirabel, Québec. CGP registered. Part of the 24-site Mecachrome Group.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../assets/mecachrome-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#152F4E; --green:#63A03B; --green-dark:#4E8230; --ice:#EDF2F9; --mint:#F3F8EE;
+  --grey:#5F6668; --text:#33404D; --rule:#C9D3E0; --white:#fff;
+  --max:860px; --pad:20px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--text);font-family:Calibri,Carlito,"Segoe UI",Helvetica,Arial,sans-serif;font-size:17px;line-height:1.5}
+img{max-width:100%;display:block}
+a{color:var(--navy)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{color:var(--navy);margin:0;line-height:1.1}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green-dark)}
+
+/* header */
+.top{border-bottom:3px solid var(--green);background:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:8px}
+.top img{height:50px;width:auto}
+.top .where{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--grey);text-align:right;line-height:1.35}
+
+/* hero */
+.hero{background:var(--ice);border-bottom:1px solid var(--rule)}
+.hero .wrap{padding-top:34px;padding-bottom:30px}
+.hero h1{font-size:clamp(32px,8vw,52px);text-transform:uppercase;letter-spacing:.01em;margin-top:8px}
+.hero h1 span{color:var(--green-dark)}
+.hero p.lead{font-size:clamp(17px,4.4vw,20px);margin:16px 0 0;max-width:640px;color:var(--text)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:4px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid var(--navy);color:var(--navy);background:#fff}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.green{background:var(--green-dark);border-color:var(--green-dark);color:#fff}
+.btn:hover{filter:brightness(1.08)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--green);outline-offset:2px}
+
+.trust{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:26px;border:1px solid var(--rule);background:#fff;border-top:3px solid var(--green)}
+.trust div{padding:10px 12px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:14px;line-height:1.3}
+.trust div:nth-child(2n){border-right:0}
+.trust div:nth-last-child(-n+2){border-bottom:0}
+.trust b{display:block;color:var(--navy);font-size:16px}
+.trust span{color:var(--grey)}
+
+/* sections */
+section{padding:44px 0 6px}
+.bar{background:var(--navy);color:#fff;text-align:center;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px;padding:7px 12px;margin:0 0 20px}
+.intro{margin:0 0 18px;max-width:680px}
+
+/* part families */
+.fam{display:grid;gap:12px}
+.fam>div{padding:12px 14px 14px;border-top:3px solid var(--navy)}
+.fam>div.def{background:var(--mint);border-top-color:var(--green)}
+.fam h3{font-size:15px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.fam ul{margin:0;padding-left:18px;font-size:16px}
+.fam li{margin:3px 0}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}
+.gal figure{margin:0;border:1px solid var(--rule);background:#fff}
+.gal .ph{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:8px;background:#fff}
+.gal img{max-height:100%;width:auto;object-fit:contain}
+.gal figcaption{padding:8px 10px 10px;border-top:1px solid var(--rule);font-size:14px;line-height:1.3;color:var(--grey)}
+.gal figcaption b{display:block;color:var(--navy);font-size:15px}
+.subhead{margin:26px 0 0;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy)}
+
+/* machines */
+.mach{display:grid;gap:10px}
+.m{border:1px solid var(--rule);border-left:4px solid var(--green);padding:10px 14px;background:#fff}
+.m:nth-child(odd){background:var(--ice)}
+.m h3{font-size:18px}
+.m .sub{color:var(--grey);font-size:14px}
+.m dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;margin:8px 0 0;font-size:15px}
+.m dt{color:var(--grey)}
+.m dd{margin:0;color:var(--text)}
+.m .qty{float:right;background:var(--navy);color:#fff;font-weight:700;border-radius:3px;padding:2px 9px;font-size:14px}
+.note{font-size:14px;color:var(--grey);font-style:italic;margin-top:12px}
+
+/* scope */
+.scope{display:grid;gap:14px}
+.scope>div{border-top:2px solid var(--navy);padding-top:8px}
+.scope h3{font-size:14px;letter-spacing:.09em;text-transform:uppercase}
+.scope ul{margin:6px 0 0;padding-left:18px;font-size:16px}
+
+/* group */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--rule);border-top:3px solid var(--green)}
+.stats div{padding:14px 8px;text-align:center;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.stats div:nth-child(2n){border-right:0}
+.stats div:nth-last-child(-n+2){border-bottom:0}
+.stats b{display:block;font-size:34px;line-height:1;color:var(--green-dark)}
+.stats span{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey)}
+.sites{margin-top:16px;display:grid;gap:10px}
+.country{display:flex;align-items:center;gap:10px;font-size:15px}
+.country .lbl{width:74px;flex:none;color:var(--navy);font-weight:700}
+.country .bar-fill{flex:none;height:12px;background:var(--green);border-radius:2px}
+.country .n{color:var(--grey);font-size:14px}
+.sector{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}
+.sector div{border:1px solid var(--rule);background:var(--mint);padding:12px;font-weight:700;color:var(--navy);font-size:15px;line-height:1.25}
+.sector div.hl{background:var(--navy);color:#fff}
+
+/* contacts */
+.cards{display:grid;gap:16px}
+.card{border:1px solid var(--rule);border-top:4px solid var(--green);background:#fff;padding:16px}
+.card .who{display:flex;gap:14px;align-items:center}
+.avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;background:var(--ice);border:2px solid var(--rule);flex:none;display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:700;font-size:28px}
+.card h3{font-size:22px}
+.card .role{color:var(--grey);font-size:16px}
+.card .lines{margin:14px 0 0;font-size:16px;word-break:break-word}
+.card .lines a{text-decoration:none;font-weight:700}
+.card .lines div{padding:5px 0;border-top:1px solid var(--rule)}
+.card .btns{margin-top:14px}
+.card .btn{flex:1 1 130px;min-height:46px;padding:0 12px;font-size:15px}
+
+/* cta */
+.cta{margin:34px 0 0;background:var(--navy);color:#fff;padding:26px 22px}
+.cta h2{color:#fff;font-size:clamp(24px,6vw,32px);text-transform:uppercase}
+.cta p{margin:10px 0 0;max-width:640px;color:#E6EDF6}
+.cta .btn{border-color:#fff}
+.cta .btn.green{border-color:var(--green)}
+.cta small{display:block;margin-top:14px;color:#B9C7D8;font-size:14px;line-height:1.4}
+
+footer{margin-top:34px;border-top:3px solid var(--green);padding:18px 0 90px;font-size:13px;color:var(--grey);text-align:center}
+footer img{height:40px;margin:0 auto 8px}
+
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:5;background:#fff;border-top:3px solid var(--green);display:flex;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
+.dock .btn{flex:1;min-height:46px;padding:0 8px;font-size:15px}
+
+@media (min-width:700px){
+  :root{--pad:28px}
+  body{font-size:18px}
+  .trust{grid-template-columns:repeat(4,1fr)}
+  .trust div{border-bottom:0}
+  .trust div:nth-child(2n){border-right:1px solid var(--rule)}
+  .trust div:last-child{border-right:0}
+  .fam{grid-template-columns:repeat(3,1fr)}
+  .gal{grid-template-columns:repeat(3,1fr)}
+  .mach{grid-template-columns:repeat(2,1fr)}
+  .scope{grid-template-columns:repeat(2,1fr);gap:28px}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .stats div{border-bottom:0}
+  .stats div:nth-child(2n){border-right:1px solid var(--rule)}
+  .stats div:last-child{border-right:0}
+  .sector{grid-template-columns:repeat(4,1fr)}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .dock{display:none}
+  footer{padding-bottom:30px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="../"><img src="../assets/mecachrome-logo.png" alt="Mecachrome" width="157" height="50"></a>
+    <div class="where"><a href="../" style="color:inherit">← Contacts</a><br>Mecachrome Canada · Mirabel</div>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div class="eyebrow">AUSA 2026 · Washington D.C.</div>
+    <h1>5-axis structures for <span>defense</span> &amp; aerospace</h1>
+    <p class="lead">Open 5-axis capacity for large, complex aluminum and hard-metal parts. We machine, assemble and deliver build-to-print structures from Mirabel, Canada, backed by a 24-site industrial group.</p>
+    <div class="btns">
+      <a class="btn primary" href="#contact">Talk to us</a>
+      <a class="btn" href="../assets/Mecachrome_Canada_Capability_AUSA2026.pdf">Download capability sheet (PDF)</a>
+    </div>
+    <div class="trust" aria-label="Certifications">
+      <div><b>AS9100 / ISO 9001</b><span>Mirabel site</span></div>
+      <div><b>CGP registered</b><span>Controlled Goods Program</span></div>
+      <div><b>C-TPAT</b><span>Certified</span></div>
+      <div><b>AeroExcellence Bronze</b><span>In progress, end of 2026</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="parts">
+  <div class="wrap">
+    <div class="bar">What we machine</div>
+    <p class="intro">Medium to large structural parts, sub-assemblies and complete work packages, built to print and delivered as finished kits when needed.</p>
+    <div class="fam">
+      <div class="def">
+        <h3>Defense</h3>
+        <ul>
+          <li>Structural fittings and frames for military platforms</li>
+          <li>Pylon, mount and interface components in titanium</li>
+          <li>Missile launch rail / support</li>
+          <li>Optronic and sensor housings</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Aerostructures</h3>
+        <ul>
+          <li>Wing ribs, spars, beams and structural fittings</li>
+          <li>Landing gear components and sub-assemblies</li>
+          <li>Trunnions and critical rotorcraft fittings</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Space</h3>
+        <ul>
+          <li>Satellite structural and shear panels</li>
+          <li>L-band antenna structures and instrument support panels</li>
+          <li>Launcher structural fittings and longerons</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="subhead">Parts we produce — aerostructures</p>
+    <div class="gal">
+      <figure><div class="ph"><img src="../assets/hatch-door.jpg" alt="Machined hatch door" loading="lazy"></div><figcaption><b>Hatch door</b>Machining, assembly and sealant</figcaption></figure>
+      <figure><div class="ph"><img src="../assets/trunnions.jpg" alt="Machined trunnion" loading="lazy"></div><figcaption><b>Trunnions</b>Titanium and aluminum, 5-axis</figcaption></figure>
+      <figure><div class="ph"><img src="../assets/structural-beam.jpg" alt="Machined structural beam" loading="lazy"></div><figcaption><b>Structural beam</b>Monolithic aluminum, 5-axis</figcaption></figure>
+      <figure><div class="ph"><img src="../assets/machined-fittings.jpg" alt="Machined hard-metal fittings" loading="lazy"></div><figcaption><b>Machined fittings</b>Hard metals, series production</figcaption></figure>
+      <figure><div class="ph"><img src="../assets/details-subassembly.jpg" alt="Machined details assembled as a kit" loading="lazy"></div><figcaption><b>Details and sub-assembly</b>Assembled and delivered as a kit</figcaption></figure>
+      <figure><div class="ph"><img src="../assets/structural-fitting.jpg" alt="Structural fitting machined from forged block" loading="lazy"></div><figcaption><b>Structural fitting</b>Machined from forged block</figcaption></figure>
+    </div>
+
+    <p class="subhead">Parts we produce — space &amp; defense</p>
+    <div class="gal">
+      <figure><div class="ph"><img src="../assets/satellite-antenna.jpg" alt="Satellite antenna structure" loading="lazy"></div><figcaption><b>Satellite antenna</b>Precision aluminum, 5-axis</figcaption></figure>
+      <figure><div class="ph"><img src="../assets/satellite-panel.jpg" alt="Thin-wall satellite panel" loading="lazy"></div><figcaption><b>Satellite panel</b>Thin-wall aluminum, 5-axis</figcaption></figure>
+      <figure><div class="ph"><img src="../assets/satellite-radar-panel.jpg" alt="Radar panel structure" loading="lazy"></div><figcaption><b>Radar panel</b>High-precision aluminum machining</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="capacity">
+  <div class="wrap">
+    <div class="bar">Open capacity — machines &amp; envelopes</div>
+    <div class="mach">
+      <div class="m"><span class="qty">×4</span><h3>Mazak Variaxis 630-5X / 730-5X</h3><div class="sub">5-axis simultaneous</div>
+        <dl><dt>Travels (in)</dt><dd>24.8 × 30 × 20 · 28.7 × 33.5 × 22</dd><dt>Materials</dt><dd>Aluminum &amp; hard metals</dd></dl></div>
+      <div class="m"><span class="qty">×2</span><h3>Mazak Vortex 1400/160-II</h3><div class="sub">5-axis, double column</div>
+        <dl><dt>Travels (in)</dt><dd>157.5 × 55.1 × 27.5</dd><dt>Materials</dt><dd>Aluminum (hard-metal capable)</dd></dl></div>
+      <div class="m"><span class="qty">×1</span><h3>Mazak Vortex 815/120-II</h3><div class="sub">5-axis, column feed</div>
+        <dl><dt>Travels (in)</dt><dd>120 × 31.9 × 27.5</dd><dt>Materials</dt><dd>Aluminum (hard-metal capable)</dd></dl></div>
+      <div class="m"><span class="qty">×7</span><h3>Makino MAG3.EX</h3><div class="sub">5-axis horizontal profilers</div>
+        <dl><dt>Travels (in)</dt><dd>157.5 × 59.1 × 39.4</dd><dt>Materials</dt><dd>Aluminum</dd></dl></div>
+      <div class="m"><span class="qty">×2</span><h3>Cincinnati gantry profiler</h3><div class="sub">5 spindles, 5 axes</div>
+        <dl><dt>Travels (in)</dt><dd>720 × 145 × 30</dd><dt>Materials</dt><dd>Aluminum &amp; hard metals</dd></dl></div>
+    </div>
+    <p class="note">Plus complementary 3- to 5-axis centers for hard metals. Current availability and hourly rates on request.</p>
+  </div>
+</section>
+
+<section id="scope">
+  <div class="wrap">
+    <div class="bar">What is in our scope</div>
+    <div class="scope">
+      <div><h3>In-house</h3><ul>
+        <li>Raw-material procurement and stock management</li>
+        <li>3- to 5-axis machining in aluminum, titanium and stainless steel, from plate, block or forging</li>
+        <li>CAM programming, deburring, dimensional control (CMM &amp; laser), FAI</li>
+        <li>Assembly, touch-up paint and sealant, kitting</li></ul></div>
+      <div><h3>Through our supply chain</h3><ul>
+        <li>Surface treatments, chemical processing and full paint</li>
+        <li>Non-destructive testing (penetrant, ultrasonic)</li>
+        <li>Forging and casting supply, when the part calls for it</li></ul></div>
+    </div>
+    <p class="note">Build-to-print: we manufacture to your design and specifications.</p>
+  </div>
+</section>
+
+<section id="group">
+  <div class="wrap">
+    <div class="bar">The Mecachrome Group</div>
+    <div class="stats">
+      <div><b>1937</b><span>Founded</span></div>
+      <div><b>24</b><span>Sites</span></div>
+      <div><b>5,000+</b><span>Employees</span></div>
+      <div><b>€640M</b><span>2024 revenue</span></div>
+    </div>
+    <div class="sites" aria-label="Group sites by country">
+      <div class="country"><span class="lbl">France</span><span class="bar-fill" style="width:84px"></span><span class="n">16 sites · HQ in Blagnac</span></div>
+      <div class="country"><span class="lbl">Morocco</span><span class="bar-fill" style="width:15px"></span><span class="n">3 sites</span></div>
+      <div class="country"><span class="lbl">Tunisia</span><span class="bar-fill" style="width:15px"></span><span class="n">3 sites</span></div>
+      <div class="country"><span class="lbl">Canada</span><span class="bar-fill" style="width:5px"></span><span class="n">1 site · Mirabel, Québec</span></div>
+      <div class="country"><span class="lbl">Portugal</span><span class="bar-fill" style="width:5px"></span><span class="n">1 site</span></div>
+    </div>
+    <div class="sector">
+      <div class="hl">Defense, Naval, Energy &amp; Space</div>
+      <div>Aerostructures</div>
+      <div>Aero-engines</div>
+      <div>Premium &amp; motorsport automotive</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="bar">Contact</div>
+    <div class="cards">
+
+      <article class="card">
+        <div class="who">
+          <img class="avatar" src="../assets/johary-lunven.jpg" alt="Johary Lunven" width="84" height="84" onerror="this.outerHTML='<div class=&quot;avatar&quot; aria-hidden=&quot;true&quot;>JL</div>'">
+          <div><h3>Johary Lunven</h3><div class="role">Key Account Manager</div></div>
+        </div>
+        <div class="lines">
+          <div><a href="tel:+12635669383">+1 (263) 566-9383</a></div>
+          <div><a href="mailto:johary.lunven@mecachrome.com">johary.lunven@mecachrome.com</a></div>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="tel:+12635669383">Call</a>
+          <a class="btn" href="mailto:johary.lunven@mecachrome.com?subject=AUSA%202026">Email</a>
+          <a class="btn green" href="../assets/johary-lunven.vcf" download>Save contact</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="who">
+          <img class="avatar" src="../assets/jonathan-raymond.jpg" alt="Jonathan Raymond" width="84" height="84" onerror="this.outerHTML='<div class=&quot;avatar&quot; aria-hidden=&quot;true&quot;>JR</div>'">
+          <div><h3>Jonathan Raymond</h3><div class="role">Sales Director Americas</div></div>
+        </div>
+        <div class="lines">
+          <div><a href="tel:+15148250140">+1 (514) 825-0140</a></div>
+          <div><a href="mailto:jonathan.raymond@mecachrome.com">jonathan.raymond@mecachrome.com</a></div>
+        </div>
+        <div class="btns">
+          <a class="btn primary" href="tel:+15148250140">Call</a>
+          <a class="btn" href="mailto:jonathan.raymond@mecachrome.com?subject=AUSA%202026">Email</a>
+          <a class="btn green" href="../assets/jonathan-raymond.vcf" download>Save contact</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="cta">
+      <h2>Send us a drawing package or RFQ</h2>
+      <p>We come back with a ROM price and a lead time. We can put an NDA in place first, and we would be glad to host you at our facility in Mirabel.</p>
+      <div class="btns">
+        <a class="btn green" href="mailto:johary.lunven@mecachrome.com?cc=jonathan.raymond@mecachrome.com&subject=AUSA%202026%20%E2%80%93%20RFQ%20%2F%20drawing%20package&body=Company%3A%0AProgram%20or%20part%20family%3A%0AMaterial%20and%20approximate%20size%3A%0AQuantities%20and%20need%20date%3A%0A%0APlease%20do%20not%20attach%20ITAR%2FCUI-controlled%20drawings.%20Let%27s%20first%20set%20up%20an%20NDA%20and%20a%20secure%20exchange.">Request a quote</a>
+        <a class="btn" style="background:transparent;color:#fff" href="mailto:johary.lunven@mecachrome.com?cc=jonathan.raymond@mecachrome.com&subject=AUSA%202026%20%E2%80%93%20Visit%20Mirabel">Plan a visit to Mirabel</a>
+      </div>
+      <small>For controlled technical data (ITAR / CUI), please do not email drawings. We will agree on an NDA and a secure exchange channel first.</small>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="../assets/mecachrome-logo.png" alt="Mecachrome" width="126" height="40">
+    <div>Mecachrome Canada · Mirabel, Québec · <a href="https://www.mecachrome.com">mecachrome.com</a></div>
+    <div>Non-contractual information. Capacity valid at date of issue. © Mecachrome Group.</div>
+  </div>
+</footer>
+
+<nav class="dock" aria-label="Quick contact">
+  <a class="btn primary" href="#contact">Contact</a>
+  <a class="btn green" href="../assets/johary-lunven.vcf" download>Save my contact</a>
+</nav>
+
+</body>
+</html>
