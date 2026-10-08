@@ -191,6 +191,14 @@ footer img{height:40px;margin:0 auto 8px}
 .endcta .btns{justify-content:center}
 .endcta .btn{border-color:#fff}
 .endcta .btn.green{border-color:var(--green)}
+
+.certs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:22px}
+.cert{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;background:#fff;border:1px solid var(--rule);border-top:3px solid var(--green);padding:10px 4px 9px;flex:none}
+.cert .seal{width:44px;height:44px}
+.cert .seal img{width:28px}
+.cert b{font-size:13px}
+.cert span.t{font-size:11px;line-height:1.2}
+@media (min-width:700px){.cert b{font-size:16px}.cert span.t{font-size:13px}.cert{padding:12px 8px}}
 </style>
 </head>
 <body>
@@ -208,13 +216,13 @@ footer img{height:40px;margin:0 auto 8px}
     <p class="lead">Precision machining and assembly, build-to-print, from Mirabel, Canada. Save our contacts, explore our capacity or send us an RFQ.</p>
     <div class="tiles">
       <a class="tile" href="ausa-2026/"><span class="eyebrow">Mirabel plant</span><h2>Machining capacity</h2><p>Open 5-axis capacity, machine envelopes and part families.</p><span class="go">View capacity →</span></a>
-      <a class="tile" href="group/"><span class="eyebrow">Mecachrome Group</span><h2>Group presentation</h2><p>24 sites and 5,000+ people across France, Canada, Portugal, Morocco and Tunisia.</p><span class="go">View the Group →</span></a>
+      <a class="tile" href="group/"><span class="eyebrow">Mecachrome Group</span><h2>Group presentation</h2><p>22 sites and 5,000+ people across France, Canada, Portugal, Morocco and Tunisia.</p><span class="go">View the Group →</span></a>
     </div>
     <div class="certs" aria-label="Certifications and registrations">
-      <div class="cert"><span class="seal"><img src="assets/flag-ca.png" alt="Canada"></span><div><b>CGP registered</b><span class="t">Controlled Goods Program, Canada</span></div></div>
-      <div class="cert"><span class="seal">AS<br>9100D</span><div><b>AS9100D</b><span class="t">Aerospace quality system, Mirabel</span></div></div>
-      <div class="cert"><span class="seal">C-<br>TPAT</span><div><b>C-TPAT</b><span class="t">Certified supply chain security</span></div></div>
-      <div class="cert wip"><span class="seal">AE</span><div><b>AeroExcellence Bronze</b><span class="t">In progress, expected end of 2026</span></div></div>
+      <div class="cert"><span class="seal"><img src="assets/flag-ca.png" alt="Canada"></span><div><b>CGP</b><span class="t">Controlled Goods Program</span></div></div>
+      <div class="cert"><span class="seal">AS<br>9100D</span><div><b>AS9100D</b><span class="t">Aerospace quality</span></div></div>
+      <div class="cert"><span class="seal">C-<br>TPAT</span><div><b>C-TPAT</b><span class="t">Supply chain security</span></div></div>
+      <div class="cert wip"><span class="seal">AE</span><div><b>Bronze</b><span class="t">AeroExcellence, in progress</span></div></div>
     </div>
   </div>
 </div>
@@ -258,24 +266,12 @@ footer img{height:40px;margin:0 auto 8px}
 
     </div>
 
-    <div class="visit">
-      <img class="map" src="assets/map-mirabel.png" alt="Map: Mirabel, Québec, near Montréal, Ottawa and the U.S. border" width="340" height="178">
-      <div>
-        <h3>Visit us in Mirabel</h3>
-        <address>Mecachrome Canada Inc.<br>11 100 Julien-Audette<br>Mirabel (Québec) J7N 3L3, Canada</address>
-        <p>About 45 km northwest of Montréal and 70 km from the U.S. border (straight line).</p>
-        <div class="btns">
-          <a class="btn primary" href="mailto:johary.lunven@mecachrome.com?cc=jonathan.raymond@mecachrome.com&subject=Visit%20Mirabel">Plan a visit</a>
-          <a class="btn" href="https://www.google.com/maps/search/?api=1&query=11100+Julien-Audette+Mirabel+QC+J7N+3L3">Directions</a>
-        </div>
-      </div>
-    </div>
-
     <div class="cta">
       <h2>Send us a drawing package or RFQ</h2>
       <p>We come back with a ROM price and a lead time. We can put an NDA in place first.</p>
       <div class="btns">
         <a class="btn green" href="mailto:johary.lunven@mecachrome.com?cc=jonathan.raymond@mecachrome.com&subject=AUSA%202026%20%E2%80%93%20RFQ%20%2F%20drawing%20package&body=Company%3A%0AProgram%20or%20part%20family%3A%0AMaterial%20and%20approximate%20size%3A%0AQuantities%20and%20need%20date%3A%0A%0APlease%20do%20not%20attach%20ITAR%2FCUI-controlled%20drawings.%20Let%27s%20first%20set%20up%20an%20NDA%20and%20a%20secure%20exchange.">Request a quote</a>
+        <a class="btn" style="background:transparent;color:#fff" href="ausa-2026/#facility">Visit Mirabel</a>
       </div>
       <small>For controlled technical data (ITAR / CUI), please do not email drawings. We will agree on an NDA and a secure exchange channel first.</small>
     </div>
